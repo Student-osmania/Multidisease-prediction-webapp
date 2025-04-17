@@ -32,12 +32,13 @@ This is a web application that predicts various diseases such as **Diabetes**, *
 - SQLite library
 - Scikit-learn, Pandas, NumPy, and other dependencies.
 
-### Installation
+## Installation
 
 1. Clone this repository:
 
    ```bash
    git clone https://github.com/yourusername/your-repository.git
+
 2.Navigate to the project directory:
 
    ```bash
@@ -56,24 +57,8 @@ This is a web application that predicts various diseases such as **Diabetes**, *
 ```bash
   streamlit run app/streamlit_app.py
 ```
-### Files Structure
 
-multi-disease-prediction-webapp/
-│
-├── app/
-│   ├── assets/                   # Images for the app
-│   ├── streamlit_app.py          # The main app file
-│
-├── models/                       # Folder to store machine learning models
-│   ├── diabetes_model.sav        # Pre-trained diabetes prediction model
-│   ├── heart_model.sav           # Pre-trained heart disease model
-│   ├── parkinsons_model.sav      # Pre-trained Parkinson's disease model
-│
-├── data.db                       # SQLite database for storing user data
-├── requirements.txt              # Python dependencies
-├── README.md                     # Project documentation
-
-### Pre-trained Models
+## Pre-trained Models
 The app uses the following pre-trained models:
 
 **Diabetes Prediction Model**: A machine learning model to predict if a person is diabetic based on various health parameters.
@@ -84,21 +69,3 @@ The app uses the following pre-trained models:
 
 You can upload your own models, or train them using datasets from sources like Kaggle.
 
-### Running the Application
-Once the app is running, it will be accessible in your browser (usually at http://localhost:8501/). The main features are:
-
-**Login/SignUp**: Users can create an account or log into the app using their credentials. All passwords are hashed for security.
-
-**Disease Prediction**: After logging in, users can navigate through the sidebar and select a disease for prediction:
-
-1.Diabetes Prediction: Based on factors like glucose level, age, BMI, etc.
-2.Heart Disease Prediction: Based on heart health metrics like cholesterol, blood pressure, etc.
-3.Parkinson’s Disease Prediction: Based on speech and movement-related features.
-
-**App Workflow**
-Login/SignUp: The app checks user credentials stored in the SQLite database. If login is successful, the user can proceed to the disease prediction pages.
-
-**Prediction Pages:**
-For each disease, the user will fill out a form with health-related inputs.After clicking the "Predict" button, the app will use the respective pre-trained model to predict the disease.
-
-**Results:** The app will display the prediction result (whether the user has the disease or not) and the corresponding message.
