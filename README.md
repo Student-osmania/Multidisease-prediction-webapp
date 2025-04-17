@@ -11,7 +11,7 @@ This is a web application that predicts various diseases such as **Diabetes**, *
   - Parkinson’s Disease
 - **Machine Learning Models:** The app uses pre-trained machine learning models for each disease prediction.
 
-## Technologies Used
+## Technologies Used!
 
 - **Python**
   - **Streamlit**: For building the interactive web application.
@@ -68,4 +68,6 @@ The app uses the following pre-trained models:
 **Parkinson’s Disease Prediction Model**: A model to predict whether a person has Parkinson's disease based on certain medical metrics.
 
 You can upload your own models, or train them using datasets from sources like Kaggle.
+[project report](https://github.com/user-attachments/assets/1f640713-cd6b-4d42-a7b0-f0e99889211f)
+
 
